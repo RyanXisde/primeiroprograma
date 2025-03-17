@@ -1,15 +1,16 @@
+// Online C compiler to run C program online
 #include <stdio.h>
 
-int main() {
-  int numero = 5;
-  int chute;
-  printf("Digite um número:");
-  scanf("%d" , &chute);
- 
- if(chute == numero){
-printf("Parabéns, você acertou! Obrigado por jogar.");
- }else{
-      printf("Você errou, o número era %d.", numero);
-}
+int main(){
+    int numero;
+    printf("Digite um número: ");
+    scanf("%d", &numero);
+    if(numero>0){
+        printf ("O número é positivo.\n");
+    } else if(numero<0){
+        printf ("O número é negativo.\n");
+    } else {
+        printf ("O número é 0.");
+    }
     return 0;
 }
