@@ -1,0 +1,97 @@
+#include <stdio.h>
+
+// ADD VALOR A INT
+void adicionar(int *numero, int valor){
+    *numero += valor;
+}
+
+
+// INTS
+int main()
+{
+int carro=10;
+int moto=5;
+int caminhao=20;
+int onibus=30;
+int troco;
+int preco;
+int num1;
+int num2;
+int num;
+
+// INICIO
+    printf("Olá, abaixo estão as informações de pedágio..\n");
+    printf("1 - Carro       R$ 10, 00\n");
+    printf("2 - Moto        R$ 05, 00\n");
+    printf("3 - Caminhão    R$ 20, 00\n");
+    printf("4 - Onibus      R$ 30, 00\n");
+    printf("Agora selecione o número que indica seu veículo: ");
+    
+// PRIMEIRA PARTE
+    scanf("%d", &num1);
+    if(num1==1){
+        adicionar(&preco, carro);
+} else if(num1==2) {
+    adicionar(&preco, moto);
+    
+} else if(num1==3) {
+    adicionar(&preco, caminhao);
+    
+} else if(num1==4) {
+    adicionar(&preco, onibus);
+} else{
+    printf("Número invalido.\n");
+    return -1;
+}
+
+// SEGUNDA PARTE
+printf("Certo, o valor do pedágio será %d reais.\n", preco);
+printf("1 - Continuar Registrando;\n");
+printf("2 - Finalizar o Registro;\n");
+printf("Informe sua opção:  \n");
+scanf("%d", &num);
+if(num==2){
+    printf("Certo, o valor que deve pagar é R$ %d,00.", preco);
+    scanf("%d", &num);
+    
+    // CONTINUAR REGISTRO
+} else if(num==1){
+    printf("Aqui estão as informações de registro.\n");
+    printf("1 - Carro       R$ 10, 00\n");
+    printf("2 - Moto        R$ 05, 00\n");
+    printf("3 - Caminhão    R$ 20, 00\n");
+    printf("4 - Onibus      R$ 30, 00\n");
+    printf("Agora selecione o número que indica seu veículo: ");
+    scanf("%d", &num1);
+    if(num1==1){
+        adicionar(&preco, carro);
+} else if(num1==2) {
+    adicionar(&preco, moto);
+    
+} else if(num1==3) {
+    adicionar(&preco, caminhao);
+    
+} else if(num1==4) {
+    adicionar(&preco, onibus);
+} else{
+    printf("Número invalido.\n");
+    return -1;
+} printf("Certo, o valor do pedágio será R$ %d,00.\n", preco);
+}
+// FORMA DE PAGAMENTO
+printf("Qual será a forma de pagamento?");
+printf("1 - Pix");
+printf("2 - Débito");
+printf("3 - Crédito");
+printf("4 - Dinheiro");
+scanf("%d", &num2);
+if(num2==1){
+    printf("Certo, envie o pagamento no QR code abaixo.");
+    printf("(Qr Code)");
+} else if (num2==2){
+    oioi
+}
+}
+// FINAL
+return 0;
+}
