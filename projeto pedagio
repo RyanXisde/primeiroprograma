@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+// Adiciona o valor a um int
+void adicionar(int *numero, int valor){
+    *numero += valor;
+}
+
+
+// ints que vao conter os valores do programa e o int de finalização
+int main()
+{
+int carro=10;
+int moto=5;
+int caminhao=20;
+int onibus=30;
+int cabo;
+int troco;
+int preco;
+int num;
+
+// pergunta inicial
+    printf("Olá, coloque o número que indica o seu veículo, para calcularmos seu pedágio.\n");
+    printf("1 - carro;\n");
+    printf("2 - Moto;\n");
+    printf("3 - Caminhão;\n");
+    printf("4 - Onibus.\n");
+    printf("Agora selecione o número que indica seu veículo: ");
+    
+// geral do programa
+    scanf("%d", &num);
+    if(num=5){
+        adicionar(&preco, 5);
+} else (num=10) {
+    adicionar(&preco, 10);
+    
+} else (num=20) {
+    adicionar(&preco, 20);
+    
+} else (num=30) {
+    adicionar(&preco, 30);
+} // fim dos else
+
+printf("Certo, por enquanto o valor do pedágio está %d reais. Gostaria de registrar outro veículo?", preco);
+
+// final 
+return 0;
+}
